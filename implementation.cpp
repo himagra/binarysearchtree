@@ -102,14 +102,15 @@ int main()
 	LevelOrder(root);
 	cout << "Minimum is " << FindMin(root) << endl;
 	int n;
+	cout << "Enter a number to search" ;
 	cin >> n;
 	if(Search(root , n) == true)
-		cout << "YES" << endl;
+		cout << "YES It exists in the tree" << endl;
 	else 
 		cout << "NO" << endl;
 
 	if(IsBinarySearchTree(root) == true)
-		cout << "YES it is a bst" << endl;
+		cout << "And Yes it is a bst" << endl;
 	else 
-		cout << "NO it is not a bst" << endl;	
+		cout << "And No it is not a bst" << endl;	
 }
